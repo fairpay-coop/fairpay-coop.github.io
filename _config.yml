@@ -9,13 +9,15 @@
 title: Fairpay Coop.
 email: info@fairpay.coop
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  The Fairpay Cooperative is an experiment in building a different kind of enterprise.
+  Our mission is to facilitate the lowest cost and most practical payment solutions for social enterprises,
+  non-profit organizations, and community focused small businesses.  We are committed to complete transparency of all
+  operations and finances and a democratic governance by our work contributors and patrons.  We believe in fair
+   exchanges of value, and the generation of profits for society, not shareholders.
 baseurl: ""
 url: "http://fairpay.coop"
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: fairpaycoop
+github_username:  fairpay-coop
 
 # Build settings
 markdown: kramdown
