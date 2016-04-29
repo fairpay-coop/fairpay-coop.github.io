@@ -104,13 +104,13 @@ function loadCreatorScripts() {
 
 onloadFunction = function() {
     if(document.getElementById('nav-top')){
-    try{
-        if(parent.document.getElementById("zp_tmplcustom")==null ||parent.document.getElementById("zp_tmplcustom").style.display=="block"){
-            navActivate();
-        }
-    }catch(e){
-        navActivate();
-    }
+    //try{
+    //    if(parent.document.getElementById("zp_tmplcustom")==null ||parent.document.getElementById("zp_tmplcustom").style.display=="block"){
+    //        navActivate();
+    //    }
+    //}catch(e){
+    //    navActivate();
+    //}
     }
     var winHref = window.location.href;
     if(winHref.indexOf("zc_success")!=-1){
@@ -177,7 +177,7 @@ onloadFunction = function() {
     }else{
         carousel = getElementsByName_iefix('div','carousel');//No I18N
     }
-    if(isSlideBanner || carousel){
+    if(isSlideBanner || (carousel && carousel.length > 0)){
         commonLoadScript("/js/animation.js");//NO I18N
         if(isSlideBanner){
             var func = function(){
@@ -244,7 +244,7 @@ onloadFunction = function() {
     }else{
         playLists = getElementsByName_iefix("div", "audioplaylist");//NO I18N
     }
-    if(audios || playLists){
+    if((audios && audios.length > 0) || (playLists && playLists.length > 0)){
         commonLoadScript("/js/audio.js","audio"); //NO I18N
     }
     // for social share it is come first for render fb, twit, gp
