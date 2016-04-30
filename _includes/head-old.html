@@ -1,0 +1,36 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}"/>
+  <meta property="og:url" content="http://fairpayments.org/"/>
+  <meta property="og:description" content=""/>
+
+  <link href="css/content_style.css" rel="stylesheet" type="text/css"/>
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  <link href="css/contentreset_style.css" type="text/css" rel="stylesheet"/>
+
+  <script>
+    var ZS_ColumnFix = false;
+    var ZS_FormAppName = "fair-payments-cooperative-53271168"
+  </script>
+  <!--[if gt IE 8]>
+    <script>ZS_ColumnFix = true</script>
+    <script src="/js/json2.js"></script>
+  <![endif]-->
+  <!--<script src="js/bootstrap.js"></script>-->
+  <script>
+    var ZS_adjustHeight = false;
+    var ZS_PublishMode = true;
+    var ZS_MobileVer = false;
+  </script>
+</head>

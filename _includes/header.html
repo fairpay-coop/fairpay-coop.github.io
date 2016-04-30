@@ -1,45 +1,14 @@
-<header class="site-header">
-
-  <div class="themeWidth">
-    <div class="themeBrandingArea">
-      <div class="themeBrandingContainer">
-        <div class="tableRow">
-          <div class="tableCell themeSitenameCaptionOuterContainer">
-            <div class="themeBrandingContainer themeSitenameCaptionInnerContainer">
-              <div class="tableRow themeSitenameCaptionContainer">
-                <div class="tableCell themeSitenameCaptionContainer">
-                  <div class="themeSitename" id="zpSitename">FairPay Cooperative, Inc.</div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="themeSocialIconArea"></div>
+<div id="header">
+  <div id="logo">
+    <h1><a href="/">FairPay Cooperative</a></h1>
   </div>
-
-  <div class="themeNavigationContainer">
-    <div class="themeWidth">
-      <div class="themeNavigationArea" style="width:100%;">
-        <div id="navigation">
-          <ul id="nav-top" data-navorientation=horizontal>
-            <li class="{% if page.id == 'home' %}selected{% endif %}"><a target="_self" href="/index.html"><span>Home</span><em></em></a></li>
-            <li class="{% if page.id == 'about-us' %}selected{% endif %}"><a target="_self" href="/about-us.html"><span>About Us</span><em></em></a></li>
-            <li class="{% if page.id == 'contact' %}selected{% endif %}"><a target="_self" href="/contact.html"><span>Contact</span><em></em></a></li>
-          </ul>
+</div>
+<div id="menu">
+  <ul>
+    <li class="{% if page.id == 'home' %}active{% endif %}"><a href="/index.html" accesskey="1" title="">Home</a></li>
+    <li class="{% if page.id == 'about-us' %}active{% endif %}"><a href="/about-us.html" accesskey="2" title="">About Us</a></li>
+    <li class="{% if page.id == 'contact' %}active{% endif %}"><a href="/contact.html" accesskey="3" title="">Contact</a></li>
+  </ul>
+</div>
 
 
-          <div id="childPageParent" style="position:relative">
-            <div id="childPage">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-</header>

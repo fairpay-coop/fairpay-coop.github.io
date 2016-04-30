@@ -1,12 +1,10 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <!--<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">-->
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
   <meta name="keywords" content=""/>
@@ -15,22 +13,11 @@
   <meta property="og:url" content="http://fairpayments.org/"/>
   <meta property="og:description" content=""/>
 
-  <link href="css/content_style.css" rel="stylesheet" type="text/css"/>
-  <link href="css/style.css" rel="stylesheet" type="text/css"/>
-  <link href="css/contentreset_style.css" type="text/css" rel="stylesheet"/>
-
-  <script>
-    var ZS_ColumnFix = false;
-    var ZS_FormAppName = "fair-payments-cooperative-53271168"
-  </script>
-  <!--[if gt IE 8]>
-    <script>ZS_ColumnFix = true</script>
-    <script src="/js/json2.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.slidertron-1.1.js"></script>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Archivo+Narrow:400,700" rel="stylesheet" type="text/css" />
+  <link href="/css/default.css" rel="stylesheet" type="text/css" media="all" />
+  <!--[if IE 6]>
+  <link href="default_ie6.css" rel="stylesheet" type="text/css" />
   <![endif]-->
-  <!--<script src="js/bootstrap.js"></script>-->
-  <script>
-    var ZS_adjustHeight = false;
-    var ZS_PublishMode = true;
-    var ZS_MobileVer = false;
-  </script>
 </head>

@@ -4,17 +4,28 @@
   {% include head.html %}
 
   <body>
+  <div id="wrapper" class="container">
 
-    {% include header.html %}
+  {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
+    {% if page.banner_img %}
+    <div id="banner">
+      <div class="slide"> <img src="{{ page.banner_img }}" width="850" alt="" /> </div>
+    </div>
+    {% endif %}
+
+    <div id="page">
+      <div id="content">
         {{ content }}
       </div>
+      <!--<div id="sidebar">-->
+      <!--</div>-->
+
     </div>
 
     {% include footer.html %}
 
+  </div>
   </body>
 
 </html>
