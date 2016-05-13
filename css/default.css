@@ -104,7 +104,7 @@ ul.style1 .first {
 
 #logo {
 	overflow:  hidden;
-	padding: 30px 0px 30px 0px;
+	padding: 20px 0px 20px 0px;
 }
 
 #logo h1, #logo span {
@@ -134,9 +134,10 @@ ul.style1 .first {
 
 #menu {
 	overflow: hidden;
-	padding: 30px 0px;
+	padding: 20px 0px 20px 0px;
 	border-top: 1px solid #CFCFCF;
-	margin-bottom: -30px;
+	border-bottom: 1px solid #CFCFCF;
+
 }
 
 #menu ul {
@@ -175,19 +176,20 @@ ul.style1 .first {
 
 #banner
 {
-	margin-top: 30px;
-	padding: 30px 0px 0px 0px;
-	border-top: 1px solid #CFCFCF;
+	/*margin-top: 20px;*/
+	padding: 20px 0px 20px 0px;
+	border-bottom: 1px solid #CFCFCF;
 }
 
 /** PAGE */
 
 #page {
 	overflow: hidden;
-	margin: 30px 0px;
-	padding: 30px 0px;
-	border-top: 1px solid #CFCFCF;
+	/*margin: 30px 0px;*/
+	padding: 20px 0px;
+	/*border-top: 1px solid #CFCFCF;*/
 	border-bottom: 1px solid #CFCFCF;
+	margin-bottom: 20px;
 }
 
 /** CONTENT */
@@ -198,9 +200,11 @@ ul.style1 .first {
 }
 
 #content h2 {
-	padding: 0em 0em 1em 0em;
+	/*padding: 0em 0em 1em 0em;*/
+	/*padding: 0px 0px;*/
+	padding-bottom: 10px;
 	font-size: 2.25em;
-	margin-bottom: -20px;
+	/*margin-bottom: -0px;*/
 }
 
 /** SIDEBAR */
